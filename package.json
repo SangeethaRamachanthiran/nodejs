@@ -1,7 +1,28 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.2",
+    "gitignore": "^0.7.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "db_connection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SangeethaRamachanthiran/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SangeethaRamachanthiran/nodejs/issues"
+  },
+  "homepage": "https://github.com/SangeethaRamachanthiran/nodejs#readme",
+  "description": ""
 }

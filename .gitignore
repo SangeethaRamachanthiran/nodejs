@@ -1,0 +1,2 @@
+let gitIgnore = require(`gitignore`);
+.env
