@@ -1,12 +1,14 @@
 const prompt = require("prompt-sync")();
 const mysql = require("mysql2");
-const test = require("dotenv").config();
+let gitIgnore = require(`gitignore`);
+const test = require("dotenv").config({path: '/home/sangeetha/nodejs_learning/nodejs/.env'});
 let db_connection = mysql.createConnection({
         host     : process.env.DB_HOST,
         user     : process.env.DB_USER,
         password : process.env.DB_PASSWORD,
         database : process.env.DB_DATABASE
     });
+    console.log(test);
     timeSheetManagement();
     function timeSheetManagement(){
       let userNeed = prompt("To add time entry, type 'ADD' or To list the time entries, type 'SHOW' or To delete your time entry, type 'DELETE' or To update your task name, type 'UPDATE'");
