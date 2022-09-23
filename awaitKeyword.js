@@ -1,8 +1,11 @@
 function resolveSetTimeOut(value) {
     return new Promise((resolve,reject) => {
-      setTimeout(() => {
-        resolve(value);
-      }, 2000);
+        if (value == null){
+            return reject("The value is null");
+        }
+        setTimeout(() => {
+            resolve(value);
+        }, 2000);
     });
   }
   

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Sheet Management</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="head">Time Sheet Management</h1>
+       
+        <form action="/submit-list" method="post">
+            <input class="field" type="text" name="user_name" placeholder="Enter your name :" required><br>
+            <input class="field" type="date" name="date_of_task" placeholder="Enter your task date :" required><br>
+            <input class="field" type="number" name="no_of_hours" placeholder="No of hours :" required><br>
+            <input class="field" type="text" name="task_name" placeholder="Enter your task name :"required><br>
+            <input id="button" type="submit" value="Submit" style="margin-left: 25%;">
+            <a href="/show" class="show_btn" style="margin-left: 6%;">Show</a>
+        </form>
+    </div>
+</body>
+</html>
